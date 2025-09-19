@@ -1,0 +1,7 @@
+Topology of Series
+
+ Cells are joined end to end in a series arrangement, with each cell's positive terminal linked to the subsequent cell's negative terminal.
+
+     Advantages: This topology raises the battery pack's total voltage.  The sum of the voltages in each individual cell is the total voltage.  Applications that need a higher operating voltage than what a single cell can supply can benefit from this.
+
+     Cons: The pack's overall capacity is identical to that of a single cell.  One significant disadvantage is that the performance of the entire battery pack is harmed if one cell fails or becomes unbalanced (due to varying states of charge).  Cell imbalances can eventually cause the pack's capacity to decline and its lifespan to shorten.
