@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "author": "Krishna Kishora k",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-pi-pico",
+      "id": "pico",
+      "top": 0,
+      "left": 0,
+      "attrs": { "builder": "pico-sdk" }
+    },
+    { "type": "wokwi-led", "id": "led1", "top": 150, "left": -217, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 63.8,
+      "left": -124.8,
+      "attrs": { "color": "green", "xray": "1" }
+    }
+  ],
+  "connections": [
+    [ "pico:GP0", "$serialMonitor:RX", "", [] ],
+    [ "pico:GP1", "$serialMonitor:TX", "", [] ],
+    [ "led1:A", "pico:GP15", "green", [ "v0" ] ],
+    [ "led1:C", "pico:GND.5", "green", [ "v19.2", "h298", "v-9.6" ] ],
+    [ "btn1:1.l", "pico:GND.1", "green", [ "h-9.6", "v-48" ] ],
+    [ "btn1:2.r", "pico:GP14", "green", [ "h19.4", "v67.4" ] ]
+  ],
+  "dependencies": {}
+}
